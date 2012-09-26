@@ -113,4 +113,12 @@
     self.hidden = YES;
   }];
 }
+-(void)hide:(CGFloat)delay {
+  [self hide:delay withCompletition:^(BOOL finished) {
+    if (finished) {
+      shown = NO;
+
+    }
+  }];
+}
 @end;
