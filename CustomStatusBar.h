@@ -12,6 +12,7 @@
 -(void)showWithStatusMessage:(NSString*)msg;
 -(void)showWithStatusMessage:(NSString*)msg hide:(BOOL)shouldHide;
 -(void)hide;
+-(void)hide:(CGFloat)delay;
 -(void)hide:(CGFloat)delay withCompletition:(void (^)(BOOL finished))completition;
 
 @end
